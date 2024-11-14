@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Coin Toss</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="hone.html" >Home</a></li>
+            <li><a href="index.html">C&T Game</a></li>
+            <!-- <li><a href="#">Results</a></li> -->
+            <li><a href="#" style="color: rgb(230, 167, 90);">Settings</a></li>
+        </ul>
+    </nav>
+    <div class="settings-container">
+        <h1>Settings</h1>
+
+        <!-- Sound Effects Toggle -->
+        <div class="setting-item">
+            <label for="sound-toggle">Sound Effects</label>
+            <input type="checkbox" id="sound-toggle">
+        </div>
+
+        <!-- Difficulty Level Selection -->
+        <div class="setting-item">
+            <label for="difficulty">Difficulty Level</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <!-- Theme Selection -->
+        <div class="setting-item">
+            <label for="theme">Select Theme</label>
+            <select id="theme">
+                <option value="light">Light Mode</option>
+                <option value="dark">Dark Mode</option>
+            </select>
+        </div>
+
+        <!-- Reset Game Button -->
+        <div class="setting-item">
+            <button id="reset-game">Reset Game Data</button>
+        </div>
+
+        <a href="hone.html"><button class="back-btn" id="back-btn">Back to Home</button></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

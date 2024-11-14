@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #a6e5c8;
+  background: linear-gradient(45deg, #70C6A7, #B3E5FC, #7BBE92);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Navbar styling */
+.navbar {
+  width: 100%;
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #F1B53D;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Hidden Menu (Mobile View) */
+.nav-active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 5;
+}
+
+.nav-active li {
+  margin: 15px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+}
+
+/* Game Styles */
+.game-container {
+  text-align: center;
+  background-color: #F8F9FA;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  width: 100%;
+  background-color: #6ddccf;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.game-btn {
+  background-color: #F1B53D;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.game-btn:hover {
+  background-color: #eaa42e;
+}
+
+.choose-text {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.coin-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.score {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.message {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.reset-btn {
+  margin-top: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.coin-image img {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0;
+}
+
+
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+.start-btn {
+  padding: 15px 30px;
+  font-size: 1.5em;
+  color: white;
+  background-color: #ffeb3b;
+  border: 2px solid #333;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.start-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Coin animation */
+.coin-animation {
+  margin-top: 30px;
+}
+
+.coin {
+  width: 60px;
+  margin: 0 15px;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-20px);
+  }
+}
+
+.character {
+  margin-top: 40px;
+}
+
+.character-img {
+  width: 150px;
+  height: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 2.5em;
+  }
+  .start-btn {
+      font-size: 1.2em;
+  }
+  .character-img {
+      width: 120px;
+  }
+}
+
+/* Settings Page Styles */
+.settings-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.setting-item {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+label {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+select, input[type="checkbox"], button {
+  padding: 10px;
+  font-size: 1em;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.back-btn {
+  margin-top: 40px;
+  background-color: #ff5722;
+}
+
+.back-btn:hover {
+  background-color: #e64a19;
+}
+
+
+
+
+
+

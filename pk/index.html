@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Toss Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#" style="color: rgb(230, 167, 90);">Coin Toss</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="hone.html">Home</a></li>
+            <li><a href="#" style="color: rgb(230, 167, 90);">C&T Game</a></li>
+            <!-- <li><a href="#">Results</a></li> -->
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </nav>
+
+    <div class="game-container">
+        <h1>LET THE GAME BEGIN!!!</h1>
+        <div class="choose-text">Choose yours</div>
+        <div class="buttons">
+            <button class="game-btn" id="head-btn">HEAD</button>
+            <span>OR</span>
+            <button class="game-btn" id="tail-btn">TAIL</button>
+        </div>
+        <div class="coin-image">
+            <img id="coin" src="coin-flip.png" alt="Coin Flip">
+        </div>
+        <div class="score" id="score">Score: 0</div>
+        <div class="message" id="message"></div>
+        <button class="reset-btn" id="reset-btn">Reset Score</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
